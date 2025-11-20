@@ -1,0 +1,71 @@
+# exclude everything except directory foo/bar
+# /*
+# !/foo
+# /foo/*
+# !/foo/bar
+
+!.gitignore
+
+############################
+# .NET / ASP.NET Core
+############################
+
+# Build outputs
+bin/
+obj/
+
+# VS / IDE configs
+.vs/
+*.user
+*.suo
+.idea/
+
+# VS Code (opcional — apague se quiser versionar)
+.vscode/
+
+# Logs e caches
+*.log
+*.cache
+*.local
+
+# Razor generated files
+*.g.cs
+*.g.cshtml.cs
+*.g.i.cs
+
+############################
+# NuGet
+############################
+project.lock.json
+project.assets.json
+*.nupkg
+packages/
+
+############################
+# Databases locais
+############################
+*.db
+*.db-shm
+*.db-wal
+*.mdf
+*.ldf
+
+############################
+# wwwroot
+############################
+# -> NÃO ignorar a pasta inteira
+# -> Você não usa bundlers, então não é necessário ignorar arquivos minificados.
+
+# Caso decida no futuro usar ferramentas de build, ative linhas como:
+# wwwroot/**/*.map
+# wwwroot/**/*.bundle.*
+# wwwroot/dist/
+# wwwroot/build/
+
+############################
+# Outros arquivos indesejados
+############################
+Thumbs.db
+*.DS_Store
+*.bak
+*.orig

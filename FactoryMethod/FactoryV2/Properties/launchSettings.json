@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "FactoryV2": {
+      "commandName": "Project",
+      "commandLineArgs": "-help -port -host -user"
+    }
+  }
+}
